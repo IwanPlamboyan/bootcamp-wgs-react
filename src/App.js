@@ -6,6 +6,10 @@ function App() {
     <div className="App">
       {/* menampilkan component navbar */}
       <Navbar />
+      <div className="text-center mt-5">
+        <h1>Bootcamp bacth 3</h1>
+        <h2>Iwan Plamboyan</h2>
+      </div>
     </div>
   );
 }
