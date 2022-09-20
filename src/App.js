@@ -1,17 +1,12 @@
-// mengimport component navbar
-import Navbar from './component/Navbar';
-
-function App() {
+const App = ({ name, pekerjaan }) => {
   return (
-    <div className="App">
-      {/* menampilkan component navbar */}
-      <Navbar />
-      <div className="text-center mt-5">
-        <h1>Bootcamp bacth 3</h1>
-        <h2>Iwan Plamboyan</h2>
-      </div>
-    </div>
+    <>
+      <h2>
+        Nama {name}, dan pekerjaan {pekerjaan}
+      </h2>
+      <hr />
+    </>
   );
-}
+};
 
 export default App;
