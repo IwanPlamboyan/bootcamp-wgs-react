@@ -1,4 +1,4 @@
-const App = ({ name, pekerjaan }) => {
+const App = () => {
   return <></>;
 };
 
