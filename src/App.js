@@ -1,10 +1,8 @@
 import React from 'react';
-import Clock from './component/Clock';
+import Form from './component/Form';
 
-class App extends React.Component {
-  render() {
-    return <Clock />;
-  }
-}
+const App = () => {
+  return <Form />;
+};
 
 export default App;
