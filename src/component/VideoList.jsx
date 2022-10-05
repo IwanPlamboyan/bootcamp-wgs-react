@@ -23,27 +23,21 @@ const VideoList = (props) => {
   );
 };
 
-class MainVideo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="main-video">
-        <iframe
-          width="690"
-          height="445"
-          src={`https://www.youtube.com/embed/${this.props.video.id.videoId}`}
-          title={this.props.video.snippet.title}
-          frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-        <h4 className="title-main">{this.props.video.snippet.title}</h4>
-      </div>
-    );
-  }
-}
+const MainVideo = ({ video }) => {
+  return (
+    <div className="main-video">
+      <iframe
+        width="690"
+        height="445"
+        src={`https://www.youtube.com/embed/${video.id.videoId}`}
+        title={video.snippet.title}
+        frameBorder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <h4 className="title-main">{video.snippet.title}</h4>
+    </div>
+  );
+};
 
 export default VideoList;
