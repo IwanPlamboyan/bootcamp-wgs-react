@@ -1,8 +1,12 @@
 import React from 'react';
-import Count from './component/Count';
+import PostList from './component/PostList';
 
 const App = () => {
-  return <Count />;
+  return (
+    <div className="ui container">
+      <PostList />
+    </div>
+  );
 };
 
 export default App;
