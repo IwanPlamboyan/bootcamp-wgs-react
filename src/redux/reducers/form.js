@@ -2,13 +2,9 @@ import { SET_DATA_FORM } from '../types/form';
 
 // buat state awal untuk aplikasi form
 const initialState = {
-  employed: '',
-  firtName: '',
-  lastName: '',
-  education: '',
-  expertise: [],
-  preferred: '',
-  notes: '',
+  setDataFormResult: false,
+  setDataFormLoading: false,
+  setDataFormError: false,
 };
 
 // buat reducer dengan dengan argument ke 1 yang berisi state yang kita buat dan action
@@ -18,12 +14,9 @@ const reducer = (state = initialState, action) => {
     case SET_DATA_FORM:
       return {
         ...state,
-        firtName: action.data.firtName,
-        lastName: action.data.lastName,
-        education: action.data.education,
-        expertise: action.data.expertise,
-        preferred: action.data.preferred,
-        notes: action.data.notes,
+        setDataFormResult: action.payload.data,
+        setDataFormLoading: action.payload.loading,
+        setDataFormError: action.payload.errorMessage,
       };
     default:
       // selain dari type action yang diatas kembalikan statenya

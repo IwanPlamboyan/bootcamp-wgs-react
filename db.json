@@ -1,0 +1,17 @@
+{
+  "biodata": [
+    {
+      "firstName": "Iwan",
+      "lastName": "Plamboyan",
+      "employed": true,
+      "education": "highschool",
+      "expertise": [
+        "NodeJS",
+        "ReactJS"
+      ],
+      "Preferred": "Full Stack",
+      "notes": "ini",
+      "id": 1
+    }
+  ]
+}
