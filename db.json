@@ -3,14 +3,15 @@
     {
       "firstName": "Iwan",
       "lastName": "Plamboyan",
+      "education": "bachelor",
       "employed": true,
-      "education": "highschool",
       "expertise": [
+        "Javascript",
         "NodeJS",
         "ReactJS"
       ],
-      "Preferred": "Full Stack",
-      "notes": "ini",
+      "preferred": "Full Stack",
+      "note": "ini notes\n",
       "id": 1
     }
   ]
